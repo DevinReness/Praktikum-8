@@ -7,7 +7,7 @@
           <img src="<?php echo base_url(); ?>assets/AdminLTE/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Devin Reness Noak</p>
+          <p><?php echo $this->session->userdata("nama");?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -48,6 +48,11 @@
         <li class="">
           <a href="#">
             <i class="fa fa-pencil-square-o"></i> <span>Peminjaman</span>
+          </a>
+        </li>
+        <li class="">
+          <a href="<?php echo base_url('LoginCntr/logout')?>">
+            <i class="fa fa-sign-out"></i> <span>Log Out</span>
           </a>
         </li>
   </aside>
